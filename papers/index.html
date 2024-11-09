@@ -1,0 +1,1376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Head -->
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <!-- Metadata, OpenGraph and Schema.org -->
+
+  <!-- Website verification -->
+  
+    <meta name="google-site-verification" content="x0GKIx1-JhByQeRrMHAyhggxJS6xR3TqAh7WlPJ2aFk">
+  
+  
+    <meta name="msvalidate.01" content="">
+  
+  <!--
+    Avoid warning on Google Chrome Error with Permissions-Policy header:
+    Origin trial controlled feature not enabled: 'interest-cohort'.
+    see https://stackoverflow.com/a/75119417
+  -->
+  <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+
+
+
+
+<!-- Standard metadata -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>
+  
+  
+    
+      Papers |  Yupan Liu
+    
+  
+</title>
+<meta name="author" content=" Yupan Liu">
+<meta name="description" content="Note that the authors of papers in theoretical computer science are listed &lt;i&gt;alphabetically&lt;/i&gt;.&lt;br&gt; For slides or videos, please refer to the " talks page.>
+
+
+
+
+
+
+
+
+
+
+<!-- Bootstrap & MDB -->
+<link rel="stylesheet" href="/assets/css/bootstrap.min.css?a4b3f509e79c54a512b890d73235ef04">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous">
+
+<!-- Bootstrap Table -->
+
+
+<!-- Fonts & Icons -->
+<link defer rel="stylesheet" href="/assets/css/academicons.min.css?f0b7046b84e425c55f3463ac249818f5">
+<link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap">
+
+<!-- Code Syntax Highlighting -->
+<link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light">
+
+
+
+<!-- Styles -->
+
+<!-- pseudocode -->
+
+
+
+  <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;">
+
+<link rel="stylesheet" href="/assets/css/main.css?d41d8cd98f00b204e9800998ecf8427e">
+<link rel="canonical" href="http://0.0.0.0:8080/papers/">
+
+<!-- Dark Mode -->
+<script src="/assets/js/theme.js?9a0c749ec5240d9cda97bc72359a72c0"></script>
+
+  <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark">
+  <script>
+    initTheme();
+  </script>
+
+
+<!-- GeoJSON support via Leaflet -->
+
+
+<!-- diff2html -->
+
+
+
+
+
+
+  </head>
+
+  <!-- Body -->
+  <body class="fixed-top-nav ">
+    <!-- Header -->
+    <header>
+  <!-- Nav Bar -->
+  <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation">
+    <div class="container">
+      
+        <a class="navbar-brand title font-weight-lighter" href="/">
+          
+            
+            
+            Yupan Liu
+          
+        </a>
+      
+      <!-- Navbar Toggle -->
+      <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+      </button>
+
+      <div class="collapse navbar-collapse text-right" id="navbarNav">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+          
+
+          <!-- About -->
+          <li class="nav-item ">
+            <a class="nav-link" href="/">About
+              
+            </a>
+          </li>
+
+          <!-- Other pages -->
+          
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              
+                
+                <li class="nav-item ">
+                  
+                  <a class="nav-link" href="/cv/">CV
+                    
+                  </a>
+                </li>
+              
+            
+          
+            
+              
+                
+                <li class="nav-item active">
+                  
+                  <a class="nav-link" href="/papers/">Papers
+                    
+                      <span class="sr-only">(current)</span>
+                    
+                  </a>
+                </li>
+              
+            
+          
+            
+              
+                
+                <li class="nav-item ">
+                  
+                  <a class="nav-link" href="/talks/">Talks
+                    
+                  </a>
+                </li>
+              
+            
+          
+            
+              
+                
+                
+                <li class="nav-item dropdown ">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Misc
+                    
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                      
+                        <a class="dropdown-item " href="/misc/">Miscellaneous</a>
+                      
+                    
+                      
+                        <a class="dropdown-item " href="https://climberpi.github.io" rel="external nofollow noopener" target="_blank">Blog (in Chinese)</a>
+                      
+                    
+                      
+                        <a class="dropdown-item " href="/resources/">Resources</a>
+                      
+                    
+                  </div>
+                </li>
+              
+            
+          
+            
+          
+            
+          
+          
+            <!-- Search -->
+            <li class="nav-item">
+              <button id="search-toggle" title="Search" onclick="openSearchModal()">
+                <span class="nav-link">ctrl k <i class="ti ti-search"></i></span>
+              </button>
+            </li>
+          
+          
+            <!-- Toogle theme mode -->
+            <li class="toggle-container">
+              <button id="light-toggle" title="Change theme">
+                <i class="ti ti-sun-moon" id="light-toggle-system"></i>
+                <i class="ti ti-moon-filled" id="light-toggle-dark"></i>
+                <i class="ti ti-sun-filled" id="light-toggle-light"></i>
+              </button>
+            </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+    <!-- Scrolling Progress Bar -->
+    <progress id="progress" value="0">
+      <div class="progress-container">
+        <span class="progress-bar"></span>
+      </div>
+    </progress>
+  
+</header>
+
+
+    <!-- Content -->
+    <div class="container mt-5" role="main">
+      
+        
+
+<div class="post">
+  <header class="post-header">
+    <h1 class="post-title">Papers</h1>
+    <p class="post-description">Note that the authors of papers in theoretical computer science are listed <i>alphabetically</i>.<br> For slides or videos, please refer to the "Talks" page.</p>
+  </header>
+
+  <article>
+    <!-- 𝙰𝙱𝙲𝙳𝙴𝙵𝙶𝙷𝙸𝙹𝙺𝙻𝙼𝙽𝙾𝙿𝚀𝚁𝚂𝚃𝚄𝚅𝚆𝚇𝚈𝚉 𝚊𝚋𝚌𝚍𝚎𝚏𝚐𝚑𝚒𝚓𝚔𝚕𝚖𝚗𝚘𝚙𝚚𝚛𝚜𝚝𝚞𝚟𝚠𝚡𝚢𝚣 -->
+<!-- 𝖠𝖡𝖢𝖣𝖤𝖥𝖦𝖧𝖨𝖩𝖪𝖫𝖬𝖭𝖮𝖯𝖰𝖱𝖲𝖳𝖴𝖵𝖶𝖷𝖸𝖹 𝖺𝖻𝖼𝖽𝖾𝖿𝗀𝗁𝗂𝗃𝗄𝗅𝗆𝗇𝗈𝗉𝗊𝗋𝗌𝗍𝗎𝗏𝗐𝗑𝗒𝗓 -->
+<!-- _pages/publications.md -->
+
+<!-- 
+<div class="publications">
+-->
+
+<script src="/assets/js/bibsearch.js?1bc438ca9037884cc579601c09afd847" type="module"></script>
+
+<p><input type="text" id="bibsearch" spellcheck="false" autocomplete="off" class="search bibsearch-form-input" placeholder="Type to filter"></p>
+
+<div class="publications">
+
+<h2 class="bibliography">2024</h2>
+<ol class="bibliography">
+<li>
+<div class="row">
+  
+    <div class="col col-sm-2 abbr">
+      
+    </div>
+  
+
+  <!-- Entry bib key -->
+  <div id="space-bounded-quantum-interactive-proofs" class="col-sm-8">
+    <!-- Title -->
+    <div class="title">Space-bounded quantum interactive proof systems</div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      
+      <a href="http://francoislegall.com" rel="external nofollow noopener" target="_blank">François
+              Le Gall</a>, <em>Yupan
+            Liu</em>, <a href="https://www.math.cm.is.nagoya-u.ac.jp/~hnishimura/e-index.html" rel="external nofollow noopener" target="_blank">Harumichi
+              Nishimura</a>, and <a href="https://wangqs13.github.io" rel="external nofollow noopener" target="_blank">Qisheng
+              Wang</a>
+      
+    </div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="periodical">
+      <em></em>
+    </div>
+    <div class="periodical">
+      
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      
+        <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
+      
+      
+      
+        <a href="http://arxiv.org/abs/2410.23958" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
+      
+      
+      
+        <a href="https://eccc.weizmann.ac.il/report/2024/167/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">ECCC</a>
+      
+      
+      
+      
+      
+      
+      
+      
+    </div>
+    
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+      
+    
+
+    
+
+    
+      <!-- Hidden abstract block -->
+      <div class="abstract hidden">
+        <p>We introduce two models of space-bounded quantum interactive proof systems, 𝖰𝖨𝖯𝖫 and 𝖰𝖨𝖯<sub>𝖴</sub>𝖫. The 𝖰𝖨𝖯<sub>𝖴</sub>𝖫 model, a space-bounded variant of quantum interactive proofs 𝖰𝖨𝖯 introduced by Watrous (CC 2003) and Kitaev and Watrous (STOC 2000), restricts verifier actions to unitary circuits. In contrast, 𝖰𝖨𝖯𝖫 allows logarithmically many intermediate measurements per verifier action (with a high-concentration condition on <i>yes</i> instances), making it the weakest model that encompasses the classical model of Condon and Ladner (JCSS 1995). <br><br>
+
+  We characterize the computational power of 𝖰𝖨𝖯𝖫 and 𝖰𝖨𝖯<sub>𝖴</sub>𝖫. When the message number \(m\) is polynomially bounded, 𝖰𝖨𝖯<sub>𝖴</sub>𝖫⊊𝖰𝖨𝖯𝖫 unless 𝖯=𝖭𝖯: <br>
+  - 𝖰𝖨𝖯𝖫 exactly characterizes 𝖭𝖯. <br>
+  - 𝖰𝖨𝖯<sub>𝖴</sub>𝖫 is contained in 𝖯 and contains 𝖲𝖠𝖢<sup>𝟣</sup>∪𝖡𝖰𝖫, where 𝖲𝖠𝖢<sup>𝟣</sup> denotes problems solvable by classical logarithmic-depth, semi-unbounded fan-in circuits. <br>
+  
+  However, this distinction vanishes when \(m\) is constant. Our results further indicate that intermediate measurements uniquely impact space-bounded quantum interactive proofs, unlike in space-bounded quantum computation, where 𝖡𝖰𝖫=𝖡𝖰<sub>𝖴</sub>𝖫. <br><br>
+    
+  We also introduce space-bounded unitary quantum statistical zero-knowledge (𝖰𝖲𝖹𝖪<sub>𝖴</sub>𝖫), a specific form of 𝖰𝖨𝖯<sub>𝖴</sub>𝖫 proof systems with statistical zero-knowledge against any verifier. This class is a space-bounded variant of quantum statistical zero-knowledge (𝖰𝖲𝖹𝖪) defined by Watrous (SICOMP 2009). We prove that 𝖰𝖲𝖹𝖪<sub>𝖴</sub>𝖫=𝖡𝖰𝖫, implying that the statistical zero-knowledge property negates the computational advantage typically gained from the interaction.</p>
+      </div>
+    
+
+    
+
+    
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+  
+    <div class="col col-sm-2 abbr">
+      
+    </div>
+  
+
+  <!-- Entry bib key -->
+  <div id="estimating-the-trace-of-quantum-state-powers" class="col-sm-8">
+    <!-- Title -->
+    <div class="title">On estimating the trace of quantum state powers</div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      
+      <em>Yupan
+            Liu</em>, and <a href="https://wangqs13.github.io" rel="external nofollow noopener" target="_blank">Qisheng
+              Wang</a>
+      
+    </div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="periodical">
+      <em>To appear in SODA 2025</em>
+    </div>
+    <div class="periodical">
+      
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      
+        <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
+      
+      
+      
+        <a href="http://arxiv.org/abs/2410.13559" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
+      
+      
+      
+        <a href="https://eccc.weizmann.ac.il/report/2024/157/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">ECCC</a>
+      
+      
+      
+      
+      
+      
+      
+      
+    </div>
+    
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+      
+    
+
+    
+
+    
+      <!-- Hidden abstract block -->
+      <div class="abstract hidden">
+        <p>We investigate the computational complexity of estimating the trace of quantum state powers \(\mathrm{Tr}(\rho^q)\) for an \(n\)-qubit mixed quantum state \(\rho\), given its state-preparation circuit of size \(\mathrm{poly}(n)\). This quantity is closely related to and often interchangeable with the Tsallis entropy \(\mathrm{S}_q(\rho) = \frac{1 - \mathrm{Tr}(\rho^q)}{q-1}\), where \(q = 1\) corresponds to the von Neumann entropy. For any non-integer \(q \geq 1 + \Omega(1)\), we provide a quantum estimator for \(\mathrm{S}_q(\rho)\) with time complexity \(\mathrm{poly}(n)\), <i>exponentially</i> improving the prior best results of \(\exp(n)\) due to Acharya, Issa, Shende, and Wagner (ISIT 2019), Wang, Guan, Liu, Zhang, and Ying (TIT 2024), Wang, Zhang, and Li (TIT 2024), and Wang and Zhang (ESA 2024). Our speedup is achieved by introducing efficiently computable <i>uniform approximations</i> of positive power functions into quantum singular value transformation. <br><br>
+
+  Our quantum algorithm reveals a sharp phase transition between the case of \(q=1\) and constant \(q&gt;1\) in the computational complexity of the 𝚀𝚞𝚊𝚗𝚝𝚞𝚖 \(q\)-𝚃𝚜𝚊𝚕𝚕𝚒𝚜 𝙴𝚗𝚝𝚛𝚘𝚙𝚢 𝙳𝚒𝚏𝚏𝚎𝚛𝚎𝚗𝚌𝚎 𝙿𝚛𝚘𝚋𝚕𝚎𝚖 (𝚃𝚜𝚊𝚕𝚕𝚒𝚜𝚀𝙴𝙳\(_q\)), particularly deciding whether the difference \(\mathrm{S}_q(\rho_0) - \mathrm{S}_q(\rho_1)\) is at least \(0.001\) or at most \(-0.001\): <br>
+
+  - For any \(1+\Omega(1) \leq q \leq 2\), 𝚃𝚜𝚊𝚕𝚕𝚒𝚜𝚀𝙴𝙳\(_q\) is 𝖡𝖰𝖯-complete, which implies that 𝙿𝚞𝚛𝚒𝚝𝚢 𝙴𝚜𝚝𝚒𝚖𝚊𝚝𝚒𝚘𝚗 is also 𝖡𝖰𝖯-complete. <br>
+  - For any \(1 \leq q \leq 1 + \frac{1}{n-1}\), 𝚃𝚜𝚊𝚕𝚕𝚒𝚜𝚀𝙴𝙳\(_q\) is 𝖰𝖲𝖹𝖪-hard, leading to hardness of approximating von Neumann entropy because \({\rm S}_q(\rho) \leq {\rm S}(\rho)\), as long as 𝖡𝖰𝖯⊊𝖰𝖲𝖹𝖪. <br><br>
+
+  The hardness results are derived from reductions based on new inequalities for the quantum \(q\)-Jensen-(Shannon-)Tsallis divergence with \(1\leq q \leq 2\), which are of independent interest.</p>
+      </div>
+    
+
+    
+
+    
+  </div>
+</div>
+</li>
+</ol>
+<h2 class="bibliography">2023</h2>
+<ol class="bibliography">
+<li>
+<div class="row">
+  
+    <div class="col col-sm-2 abbr">
+      
+    </div>
+  
+
+  <!-- Entry bib key -->
+  <div id="space-bounded-state-testing" class="col-sm-8">
+    <!-- Title -->
+    <div class="title">Space-bounded quantum state testing via space-efficient quantum singular value transformation</div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      
+      <a href="http://francoislegall.com" rel="external nofollow noopener" target="_blank">François
+              Le Gall</a>, <em>Yupan
+            Liu</em>, and <a href="https://wangqs13.github.io" rel="external nofollow noopener" target="_blank">Qisheng
+              Wang</a>
+      
+    </div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="periodical">
+      <em></em>
+    </div>
+    <div class="periodical">
+      
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      
+        <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
+      
+      
+      
+        <a href="http://arxiv.org/abs/2308.05079" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
+      
+      
+      
+        <a href="https://eccc.weizmann.ac.il/report/2023/117/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">ECCC</a>
+      
+      
+      
+      
+      
+      
+      
+      
+    </div>
+    
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+      
+    
+
+    
+
+    
+      <!-- Hidden abstract block -->
+      <div class="abstract hidden">
+        <p>Driven by exploring the power of quantum computation with a limited number of qubits, we present a novel complete characterization for space-bounded quantum computation, which encompasses settings with one-sided error (unitary 𝖼𝗈𝖱𝖰𝖫) and two-sided error (𝖡𝖰𝖫), approached from a quantum state testing perspective: <br>
+
+  - The first family of natural complete problems for unitary 𝖼𝗈𝖱𝖰𝖫, i.e., space-bounded quantum state certification for trace distance and Hilbert-Schmidt distance;<br>
+  - A new family of natural complete problems for 𝖡𝖰𝖫, i.e., space-bounded quantum state testing for trace distance, Hilbert-Schmidt distance, and quantum entropy difference. <br><br>
+
+  In the space-bounded quantum state testing problem, we consider two logarithmic-qubit quantum circuits (devices) denoted as \(Q_0\) and \(Q_1\), which prepare quantum states \(\rho_0\) and \(\rho_1\), respectively, with access to their ``source code''. Our goal is to decide whether \(\rho_0\) is \(\epsilon_1\)-close to or \(\epsilon_2\)-far from \(\rho_1\) with respect to a specified distance-like measure. Interestingly, unlike time-bounded state testing problems, our results reveal that the space-bounded state testing problems all correspond to the same class. Moreover, our algorithms on the trace distance inspire an algorithmic Holevo-Helstrom measurement, implying 𝖰𝖲𝖹𝖪 is in 𝖰𝖨𝖯(𝟤) with a quantum linear-space honest prover.
+
+  Our results primarily build upon a space-efficient variant of the quantum singular value transformation (QSVT) introduced by Gilyén, Su, Low, and Wiebe (STOC 2019), which is of independent interest. Our technique provides a unified approach for designing space-bounded quantum algorithms. Specifically, we show that implementing QSVT for any bounded polynomial that approximates a piecewise-smooth function incurs only a constant overhead in terms of the space required for special forms of the projected unitary encoding.</p>
+      </div>
+    
+
+    
+
+    
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+  
+    <div class="col col-sm-2 abbr">
+      
+    </div>
+  
+
+  <!-- Entry bib key -->
+  <div id="QSZK-triangular-discrimination" class="col-sm-8">
+    <!-- Title -->
+    <div class="title">Quantum state testing beyond the polarizing regime and quantum triangular discrimination</div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      
+      <em>Yupan
+            Liu</em>
+      
+    </div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="periodical">
+      <em></em>
+    </div>
+    <div class="periodical">
+      
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      
+        <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
+      
+      
+      
+        <a href="http://arxiv.org/abs/2303.01952" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </div>
+    
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+      
+    
+
+    
+
+    
+      <!-- Hidden abstract block -->
+      <div class="abstract hidden">
+        <p>The complexity class Quantum Statistical Zero-Knowledge (𝖰𝖲𝖹𝖪) captures computational difficulties of the time-bounded quantum state testing problem with respect to the trace distance, known as the Quantum State Distinguishability Problem (𝚀𝚂𝙳𝙿) introduced by Watrous (FOCS 2002). However, 𝚀𝚂𝙳𝙿 is in 𝖰𝖲𝖹𝖪 merely within the polarizing regime, similar to its classical counterpart shown by Sahai and Vadhan (JACM, 2003) due to the polarization lemma (error reduction for 𝚂𝙳𝙿). 
+
+  Recently, Berman, Degwekar, Rothblum, and Vasudevan (TCC 2019) extended the 𝖲𝖹𝖪 containment for 𝚂𝙳𝙿 beyond the polarizing regime via the time-bounded distribution testing problems with respect to the triangular discrimination and the Jensen-Shannon divergence. This paper introduces proper quantum analogs for these problems by defining quantum counterparts for triangular discrimination. We investigate whether the quantum analogs behave similarly to their classical counterparts and examine the limitations of existing approaches to polarization regarding quantum distances. These new 𝖰𝖲𝖹𝖪-complete problems improve 𝖰𝖲𝖹𝖪 containments for 𝚀𝚂𝙳𝙿 beyond the polarizing regime and establish a simple 𝖰𝖲𝖹𝖪-hardness for the quantum entropy difference problem (𝚀𝙴𝙳𝙿) defined by Ben-Aroya, Schwartz, and Ta-Shma (ToC 2010). Furthermore, we prove that 𝚀𝚂𝙳𝙿 with some exponentially small errors is in 𝖯𝖯, while the same problem without error is in 𝖭𝖰𝖯.</p>
+      </div>
+    
+
+    
+
+    
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+  
+    <div class="col col-sm-2 abbr">
+      
+    </div>
+  
+
+  <!-- Entry bib key -->
+  <div id="stateQMA" class="col-sm-8">
+    <!-- Title -->
+    <div class="title">Quantum Merlin-Arthur proof systems for synthesizing quantum states</div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      
+      Hugo
+            Delavenne, <a href="http://francoislegall.com" rel="external nofollow noopener" target="_blank">François
+              Le Gall</a>, <em>Yupan
+            Liu</em>, and <a href="https://sites.google.com/view/masayuki-miyamoto/" rel="external nofollow noopener" target="_blank">Masayuki
+              Miyamoto</a>
+      
+    </div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="periodical">
+      <em>To appear in Quantum</em>
+    </div>
+    <div class="periodical">
+      
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      
+        <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
+      
+      
+      
+        <a href="http://arxiv.org/abs/2303.01877" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </div>
+    
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+      
+    
+
+    
+
+    
+      <!-- Hidden abstract block -->
+      <div class="abstract hidden">
+        <p>Complexity theory typically focuses on the difficulty of solving computational problems using classical inputs and outputs, even with a quantum computer. In the quantum world, it is natural to apply a different notion of complexity, namely the complexity of synthesizing quantum states. We investigate a state-synthesizing counterpart of the class 𝖭𝖯, referred to as 𝗌𝗍𝖺𝗍𝖾𝖰𝖬𝖠, which is concerned with preparing certain quantum states through a polynomial-time quantum verifier with the aid of a single quantum message from an all-powerful but untrusted prover. This is a subclass of the class 𝗌𝗍𝖺𝗍𝖾𝖰𝖨𝖯 recently introduced by Rosenthal and Yuen (ITCS 2022), which permits polynomially many interactions between the prover and the verifier. Our main result consists of error reduction of this class and its variants with an exponentially small gap or a bounded space, as well as how this class relates to other fundamental state synthesizing classes, i.e., states generated by uniform polynomial-time quantum circuits (𝗌𝗍𝖺𝗍𝖾𝖡𝖰𝖯) and space-uniform polynomial-space quantum circuits (𝗌𝗍𝖺𝗍𝖾𝖯𝖲𝖯𝖠𝖢𝖤). Furthermore, we establish that the family of 𝖴𝖰𝖬𝖠 witnesses, considered as one of the most natural candidates, is in 𝗌𝗍𝖺𝗍𝖾𝖰𝖬𝖠. Additionally, we demonstrate that 𝗌𝗍𝖺𝗍𝖾𝖰𝖢𝖬𝖠 achieves perfect completeness.</p>
+      </div>
+    
+
+    
+
+    
+  </div>
+</div>
+</li>
+</ol>
+<h2 class="bibliography">2020</h2>
+<ol class="bibliography">
+<li>
+<div class="row">
+  
+    <div class="col col-sm-2 abbr">
+      
+    </div>
+  
+
+  <!-- Entry bib key -->
+  <div id="eStoqMA" class="col-sm-8">
+    <!-- Title -->
+    <div class="title">\({\sf StoqMA}\) meets distribution testing</div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      
+      <em>Yupan
+            Liu</em>
+      
+    </div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="periodical">
+      <em>In TQC 2021</em>
+    </div>
+    <div class="periodical">
+      
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      
+        <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
+      
+      
+      
+        <a href="http://arxiv.org/abs/2011.05733" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
+      
+      
+      
+        
+          <a href="https://drops.dagstuhl.de/opus/volltexte/2021/13999/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
+        
+      
+      
+      
+      
+        <a href="https://www.youtube.com/watch?v=--K-AYmjrVk&amp;t=8417s" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Video</a>
+      
+      
+      
+      
+      
+        
+          <a href="/assets/pdf/StoqMA_meets_distribution_TQC_5min.pdf" class="btn btn-sm z-depth-0" role="button">Slides</a>
+        
+      
+      
+    </div>
+    
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+      
+    
+
+    
+
+    
+      <!-- Hidden abstract block -->
+      <div class="abstract hidden">
+        <p>Cubitt and Montanaro (SICOMP, 2016) formulated a quantum version of Schaefer's dichotomy theorem for the local Hamiltonian problem. This quartation theorem categorizes the problem into one of four levels: 𝖯, 𝖭𝖯-complete, 𝖲𝗍𝗈𝗊𝖬𝖠-complete, or QMA-complete. The hierarchy is notable for its inclusion of a mystery class 𝖲𝗍𝗈𝗊𝖬𝖠, introduced by Bravyi, Bessen, and Terhal (2006). In this paper, we establish a link between 𝖲𝗍𝗈𝗊𝖬𝖠 and distribution testing through reversible circuits. Our first result demonstrates that the advantage of 𝖲𝗍𝗈𝗊𝖬𝖠 is due to the optimal non-negative witness. If the optimal witness is restricted to be easy witness, meaning that any quotient on the distribution's coordinates associated with the witness is efficiently computable, then the class eStoqMA is contained in MA. Remarkably, e𝖲𝗍𝗈𝗊𝖬𝖠 includes 𝖲𝗍𝗈𝗊𝖬𝖠 with perfect completeness (𝖲𝗍𝗈𝗊𝖬𝖠\(_1\)), providing an arguably simplified proof for 𝖲𝗍𝗈𝗊𝖬𝖠\(_1\)⊆𝖬𝖠 as shown in Bravyi, Bessen, and Terhal (2006), as well as Bravyi and Terhal (SICOMP, 2010). Our second result is error reduction for 𝖲𝗍𝗈𝗊𝖬𝖠 regarding soundness error, by proving that distinguishing reversible circuits with ancillary random bits is 𝖲𝗍𝗈𝗊𝖬𝖠-complete, whereas distinguishing quantum circuits is 𝖰𝖬𝖠-complete. Our results make progress towards collapsing the hierarchy 𝖬𝖠⊆𝖲𝗍𝗈𝗊𝖬𝖠⊆𝖲𝖡𝖯 in which all classes are contained in 𝖠𝖬 and collapse to 𝖭𝖯 under derandomization assumptions. </p>
+      </div>
+    
+
+    
+
+    
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+  
+    <div class="col col-sm-2 abbr">
+      
+    </div>
+  
+
+  <!-- Entry bib key -->
+  <div id="StoqMA-negl" class="col-sm-8">
+    <!-- Title -->
+    <div class="title">\(\mathsf{StoqMA}\) vs. \(\mathsf{MA}\): the power of error reduction</div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      
+      <a href="https://www.qedma.com/" rel="external nofollow noopener" target="_blank">Dorit
+              Aharonov</a>, <a href="https://abgrilo.github.io" rel="external nofollow noopener" target="_blank">Alex B.
+              Grilo</a>, and <em>Yupan
+            Liu</em>
+      
+    </div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="periodical">
+      <em>To appear in Quantum</em>
+    </div>
+    <div class="periodical">
+      
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      
+        <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
+      
+      
+      
+        <a href="http://arxiv.org/abs/2010.02835" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </div>
+    
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+      
+    
+
+    
+
+    
+      <!-- Hidden abstract block -->
+      <div class="abstract hidden">
+        <p>𝖲𝗍𝗈𝗊𝖬𝖠 characterizes the computational hardness of stoquastic local Hamiltonians, which is a family of Hamiltonians that does not suffer from the sign problem. Although error reduction is commonplace for many complexity classes, such as 𝖡𝖯𝖯, 𝖡𝖰𝖯, 𝖬𝖠, 𝖰𝖬𝖠, etc., this property remains open for 𝖲𝗍𝗈𝗊𝖬𝖠 since Bravyi, Bessen and Terhal defined this class in 2006. In this note, we show that error reduction for 𝖲𝗍𝗈𝗊𝖬𝖠 will imply that 𝖲𝗍𝗈𝗊𝖬𝖠=𝖬𝖠.</p>
+      </div>
+    
+
+    
+
+    
+  </div>
+</div>
+</li>
+</ol>
+<h2 class="bibliography">2019</h2>
+<ol class="bibliography"><li>
+<div class="row">
+  
+    <div class="col col-sm-2 abbr">
+      
+    </div>
+  
+
+  <!-- Entry bib key -->
+  <div id="PreciseQCMA-in-IP" class="col-sm-8">
+    <!-- Title -->
+    <div class="title">Towards a quantum-inspired proof for \({\sf IP} = {\sf PSPACE}\)</div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      
+      Ayal
+            Green, <a href="https://www.cs.huji.ac.il/~gkindler/" rel="external nofollow noopener" target="_blank">Guy
+              Kindler</a>, and <em>Yupan
+            Liu</em>
+      
+    </div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="periodical">
+      <em>Quantum Information &amp; Computation</em>
+    </div>
+    <div class="periodical">
+      
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      
+        <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
+      
+      
+      
+        <a href="http://arxiv.org/abs/1912.11611" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
+      
+      
+      
+        
+          <a href="https://www.rintonpress.com/journals/qiconline.html#v21n56" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
+        
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </div>
+    
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+      
+    
+
+    
+
+    
+      <!-- Hidden abstract block -->
+      <div class="abstract hidden">
+        <p>We explore quantum-inspired interactive proof systems where the prover is limited. Namely, we improve on a result by [AG17] showing a quantum-inspired interactive protocol (𝖨𝖯) for 𝖯𝗋𝖾𝖼𝗂𝗌𝖾𝖡𝖰𝖯 where the prover is only assumed to be a 𝖯𝗋𝖾𝖼𝗂𝗌𝖾𝖡𝖰𝖯 machine, and show that the result can be strengthened to show an 𝖨𝖯 for 𝖭𝖯\(^{\sf P}\)\(^{\sf P}\) with a prover which is only assumed to be an 𝖭𝖯\(^{\sf P}\)\(^{\sf P}\) machine - which was not known before. We also show how the protocol can be used to directly verify 𝖰𝖬𝖠 computations, thus connecting the sum-check protocol by [AAV13] with the result of [AG17, LFKN90]. Our results shed light on a quantum-inspired proof for 𝖨𝖯=𝖯𝖲𝖯𝖠𝖢𝖤, as 𝖯𝗋𝖾𝖼𝗂𝗌𝖾𝖰𝖬𝖠 captures the full 𝖯𝖲𝖯𝖠𝖢𝖤 power.</p>
+      </div>
+    
+
+    
+
+    
+  </div>
+</div>
+</li></ol>
+
+</div>
+
+  </article>
+
+  
+
+  
+</div>
+
+      
+    </div>
+
+    <!-- Footer -->
+    
+  <footer class="fixed-bottom" role="contentinfo">
+    <div class="container mt-0">
+      © Copyright 2024
+      
+      
+      Yupan Liu. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme.
+
+      
+      
+        Last updated: November 09, 2024.
+      
+    </div>
+  </footer>
+
+
+
+    <!-- JavaScripts -->
+    <!-- jQuery -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- Bootsrap & MDB scripts -->
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+<!-- <script src="/assets/js/mdb.min.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  <!-- Medium Zoom JS -->
+  <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script>
+  <script defer src="/assets/js/zoom.js?85ddb88934d28b74e78031fd54cf8308"></script>
+
+
+
+<!-- Bootstrap Table -->
+
+
+<!-- Load Common JS -->
+<script src="/assets/js/no_defer.js?2781658a0a2b13ed609542042a859126"></script>
+<script defer src="/assets/js/common.js?e0514a05c5c95ac1a93a8dfd5249b92e"></script>
+<script defer src="/assets/js/copy_code.js?12775fdf7f95e901d7119054556e495f" type="text/javascript"></script>
+
+<!-- Jupyter Open External Links New Tab -->
+<script defer src="/assets/js/jupyter_new_tab.js?d9f17b6adc2311cbabd747f4538bb15f"></script>
+
+
+
+    
+
+
+    
+  
+    <!-- MathJax -->
+    <script type="text/javascript">
+      window.MathJax = {
+        tex: {
+          tags: 'ams',
+        },
+      };
+    </script>
+    <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script>
+    <script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6" crossorigin="anonymous"></script>
+  
+
+
+    
+
+    
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-N7BHDWXFF4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      window.dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-N7BHDWXFF4');
+  </script>
+
+
+
+
+    
+  <!-- Scrolling Progress Bar -->
+  <script type="text/javascript">
+    /*
+     * This JavaScript code has been adapted from the article
+     * https://css-tricks.com/reading-position-indicator/ authored by Pankaj Parashar,
+     * published on the website https://css-tricks.com on the 7th of May, 2014.
+     * Couple of changes were made to the original code to make it compatible
+     * with the `al-foio` theme.
+     */
+    const progressBar = $('#progress');
+    /*
+     * We set up the bar after all elements are done loading.
+     * In some cases, if the images in the page are larger than the intended
+     * size they'll have on the page, they'll be resized via CSS to accomodate
+     * the desired size. This mistake, however, breaks the computations as the
+     * scroll size is computed as soon as the elements finish loading.
+     * To account for this, a minimal delay was introduced before computing the
+     * values.
+     */
+    window.onload = function () {
+      setTimeout(progressBarSetup, 50);
+    };
+    /*
+     * We set up the bar according to the browser.
+     * If the browser supports the progress element we use that.
+     * Otherwise, we resize the bar thru CSS styling
+     */
+    function progressBarSetup() {
+      if ('max' in document.createElement('progress')) {
+        initializeProgressElement();
+        $(document).on('scroll', function () {
+          progressBar.attr({ value: getCurrentScrollPosition() });
+        });
+        $(window).on('resize', initializeProgressElement);
+      } else {
+        resizeProgressBar();
+        $(document).on('scroll', resizeProgressBar);
+        $(window).on('resize', resizeProgressBar);
+      }
+    }
+    /*
+     * The vertical scroll position is the same as the number of pixels that
+     * are hidden from view above the scrollable area. Thus, a value > 0 is
+     * how much the user has scrolled from the top
+     */
+    function getCurrentScrollPosition() {
+      return $(window).scrollTop();
+    }
+
+    function initializeProgressElement() {
+      let navbarHeight = $('#navbar').outerHeight(true);
+      $('body').css({ 'padding-top': navbarHeight });
+      $('progress-container').css({ 'padding-top': navbarHeight });
+      progressBar.css({ top: navbarHeight });
+      progressBar.attr({
+        max: getDistanceToScroll(),
+        value: getCurrentScrollPosition(),
+      });
+    }
+    /*
+     * The offset between the html document height and the browser viewport
+     * height will be greater than zero if vertical scroll is possible.
+     * This is the distance the user can scroll
+     */
+    function getDistanceToScroll() {
+      return $(document).height() - $(window).height();
+    }
+
+    function resizeProgressBar() {
+      progressBar.css({ width: getWidthPercentage() + '%' });
+    }
+    // The scroll ratio equals the percentage to resize the bar
+    function getWidthPercentage() {
+      return (getCurrentScrollPosition() / getDistanceToScroll()) * 100;
+    }
+  </script>
+
+
+    
+
+    
+
+    
+
+    
+  <script src="/assets/js/vanilla-back-to-top.min.js?f40d453793ff4f64e238e420181a1d17"></script>
+  <script>
+    addBackToTop();
+  </script>
+
+
+    
+  <script type="module" src="/assets/js/search/ninja-keys.min.js?a3446f084dcaecc5f75aa1757d087dcf"></script>
+  <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys>
+  <script>
+    let searchTheme = determineComputedTheme();
+    const ninjaKeys = document.querySelector('ninja-keys');
+
+    if (searchTheme === 'dark') {
+      ninjaKeys.classList.add('dark');
+    } else {
+      ninjaKeys.classList.remove('dark');
+    }
+
+    const openSearchModal = () => {
+      // collapse navbarNav if expanded on mobile
+      const $navbarNav = $('#navbarNav');
+      if ($navbarNav.hasClass('show')) {
+        $navbarNav.collapse('hide');
+      }
+      ninjaKeys.open();
+    };
+  </script>
+  <script>
+    // get the ninja-keys element
+    const ninja = document.querySelector('ninja-keys');
+
+    // add the home and posts menu items
+    ninja.data = [{
+        id: "nav-about",
+        title: "About",
+        section: "Navigation",
+        handler: () => {
+          window.location.href = "/";
+        },
+      },{id: "nav-cv",
+              title: "CV",
+              description: "",
+              section: "Navigation",
+              handler: () => {
+                window.location.href = "/cv/";
+              },
+            },{id: "nav-papers",
+              title: "Papers",
+              description: "Note that the authors of papers in theoretical computer science are listed alphabetically. For slides or videos, please refer to the &quot;Talks&quot; page.",
+              section: "Navigation",
+              handler: () => {
+                window.location.href = "/papers/";
+              },
+            },{id: "nav-talks",
+              title: "Talks",
+              description: "Slides attached here only reflect the speaker&#39;s thoughts at the moment of giving the talks and probably consist of errors. Therefore, please be careful when referring to statements from these slides.",
+              section: "Navigation",
+              handler: () => {
+                window.location.href = "/talks/";
+              },
+            },{id: "dropdown-miscellaneous",
+                  title: "Miscellaneous",
+                  description: "",
+                  section: "Dropdown",
+                  handler: () => {
+                    window.location.href = "";
+                  },
+                },{id: "dropdown-blog-in-chinese",
+                  title: "Blog (in Chinese)",
+                  description: "",
+                  section: "Dropdown",
+                  handler: () => {
+                    window.location.href = "";
+                  },
+                },{id: "dropdown-resources",
+                  title: "Resources",
+                  description: "",
+                  section: "Dropdown",
+                  handler: () => {
+                    window.location.href = "";
+                  },
+                },{
+          id: 'light-theme',
+          title: 'Change theme to light',
+          description: 'Change the theme of the site to Light',
+          section: 'Theme',
+          handler: () => {
+            setThemeSetting("light");
+          },
+        },
+        {
+          id: 'dark-theme',
+          title: 'Change theme to dark',
+          description: 'Change the theme of the site to Dark',
+          section: 'Theme',
+          handler: () => {
+            setThemeSetting("dark");
+          },
+        },
+        {
+          id: 'system-theme',
+          title: 'Use system default theme',
+          description: 'Change the theme of the site to System Default',
+          section: 'Theme',
+          handler: () => {
+            setThemeSetting("system");
+          },
+        },];
+  </script>
+  <script src="/assets/js/shortcut-key.js?6f508d74becd347268a7f822bca7309d"></script>
+
+
+  </body>
+</html>
