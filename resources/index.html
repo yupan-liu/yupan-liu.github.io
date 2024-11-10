@@ -152,18 +152,6 @@
                 
                 <li class="nav-item ">
                   
-                  <a class="nav-link" href="/cv/">CV
-                    
-                  </a>
-                </li>
-              
-            
-          
-            
-              
-                
-                <li class="nav-item ">
-                  
                   <a class="nav-link" href="/papers/">Papers
                     
                   </a>
@@ -177,6 +165,18 @@
                 <li class="nav-item ">
                   
                   <a class="nav-link" href="/talks/">Talks
+                    
+                  </a>
+                </li>
+              
+            
+          
+            
+              
+                
+                <li class="nav-item ">
+                  
+                  <a class="nav-link" href="/cv/">CV
                     
                   </a>
                 </li>
@@ -216,13 +216,6 @@
           
             
           
-          
-            <!-- Search -->
-            <li class="nav-item">
-              <button id="search-toggle" title="Search" onclick="openSearchModal()">
-                <span class="nav-link">ctrl k <i class="ti ti-search"></i></span>
-              </button>
-            </li>
           
           
             <!-- Toogle theme mode -->
@@ -325,7 +318,7 @@
 
       
       
-        Last updated: November 09, 2024.
+        Last updated: November 10, 2024.
       
     </div>
   </footer>
@@ -508,111 +501,6 @@
 
 
     
-  <script type="module" src="/assets/js/search/ninja-keys.min.js?a3446f084dcaecc5f75aa1757d087dcf"></script>
-  <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys>
-  <script>
-    let searchTheme = determineComputedTheme();
-    const ninjaKeys = document.querySelector('ninja-keys');
-
-    if (searchTheme === 'dark') {
-      ninjaKeys.classList.add('dark');
-    } else {
-      ninjaKeys.classList.remove('dark');
-    }
-
-    const openSearchModal = () => {
-      // collapse navbarNav if expanded on mobile
-      const $navbarNav = $('#navbarNav');
-      if ($navbarNav.hasClass('show')) {
-        $navbarNav.collapse('hide');
-      }
-      ninjaKeys.open();
-    };
-  </script>
-  <script>
-    // get the ninja-keys element
-    const ninja = document.querySelector('ninja-keys');
-
-    // add the home and posts menu items
-    ninja.data = [{
-        id: "nav-about",
-        title: "About",
-        section: "Navigation",
-        handler: () => {
-          window.location.href = "/";
-        },
-      },{id: "nav-cv",
-              title: "CV",
-              description: "",
-              section: "Navigation",
-              handler: () => {
-                window.location.href = "/cv/";
-              },
-            },{id: "nav-papers",
-              title: "Papers",
-              description: "Note that the authors of papers in theoretical computer science are listed alphabetically. For slides or videos, please refer to the &quot;Talks&quot; page.",
-              section: "Navigation",
-              handler: () => {
-                window.location.href = "/papers/";
-              },
-            },{id: "nav-talks",
-              title: "Talks",
-              description: "Slides attached here only reflect the speaker&#39;s thoughts at the moment of giving the talks and probably consist of errors. Therefore, please be careful when referring to statements from these slides.",
-              section: "Navigation",
-              handler: () => {
-                window.location.href = "/talks/";
-              },
-            },{id: "dropdown-miscellaneous",
-                  title: "Miscellaneous",
-                  description: "",
-                  section: "Dropdown",
-                  handler: () => {
-                    window.location.href = "";
-                  },
-                },{id: "dropdown-blog-in-chinese",
-                  title: "Blog (in Chinese)",
-                  description: "",
-                  section: "Dropdown",
-                  handler: () => {
-                    window.location.href = "";
-                  },
-                },{id: "dropdown-resources",
-                  title: "Resources",
-                  description: "",
-                  section: "Dropdown",
-                  handler: () => {
-                    window.location.href = "";
-                  },
-                },{
-          id: 'light-theme',
-          title: 'Change theme to light',
-          description: 'Change the theme of the site to Light',
-          section: 'Theme',
-          handler: () => {
-            setThemeSetting("light");
-          },
-        },
-        {
-          id: 'dark-theme',
-          title: 'Change theme to dark',
-          description: 'Change the theme of the site to Dark',
-          section: 'Theme',
-          handler: () => {
-            setThemeSetting("dark");
-          },
-        },
-        {
-          id: 'system-theme',
-          title: 'Use system default theme',
-          description: 'Change the theme of the site to System Default',
-          section: 'Theme',
-          handler: () => {
-            setThemeSetting("system");
-          },
-        },];
-  </script>
-  <script src="/assets/js/shortcut-key.js?6f508d74becd347268a7f822bca7309d"></script>
-
 
   </body>
 </html>
