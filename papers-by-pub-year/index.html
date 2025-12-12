@@ -31,7 +31,7 @@
   
   
     
-      Papers |  Yupan Liu
+      Papers By Publication Year |  Yupan Liu
     
   
 </title>
@@ -71,7 +71,7 @@
   <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;">
 
 <link rel="stylesheet" href="/assets/css/main.css?d41d8cd98f00b204e9800998ecf8427e">
-<link rel="canonical" href="http://0.0.0.0:8080/papers/">
+<link rel="canonical" href="http://0.0.0.0:8080/papers-by-pub-year/">
 
 <!-- Dark Mode -->
 <script src="/assets/js/theme.js?a81d82887dd692e91686b43de4542f18"></script>
@@ -153,14 +153,30 @@
             
           
             
+          
+            
               
                 
-                <li class="nav-item active">
-                  <a class="nav-link" href="/papers/">Papers
-                    
-                      <span class="sr-only">(current)</span>
+                
+                <li class="nav-item dropdown ">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Papers
                     
                   </a>
+                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                      
+                        <a class="dropdown-item " href="/papers-by-topics/">By Topics</a>
+                      
+                    
+                      
+                        <a class="dropdown-item " href="/papers-by-release-year/">By Release Year</a>
+                      
+                    
+                      
+                        <a class="dropdown-item " href="/papers-by-pub-year/">By Publication Year</a>
+                      
+                    
+                  </div>
                 </li>
               
             
@@ -218,6 +234,12 @@
           
             
           
+            
+          
+            
+          
+            
+          
           
           
             <!-- Toogle theme mode -->
@@ -251,7 +273,7 @@
 
 <div class="post">
   <header class="post-header">
-    <h1 class="post-title">Papers</h1>
+    <h1 class="post-title">Papers By Publication Year</h1>
     <p class="post-description">Note that the authors of papers in theoretical computer science are listed <i>alphabetically</i>.<br> For slides or videos, please refer to the "Talks" page.</p>
   </header>
 
@@ -270,8 +292,211 @@
 
 <div class="publications">
 
+<h2 class="bibliography">2026</h2>
+<ol class="bibliography">
+<li>
+<div class="row">
+  
+    <div class="col col-sm-1 abbr">
+      
+    </div>
+  
+
+  <!-- Entry bib key -->
+  <div id="entropy-approx-hardness-binary-entropies" class="col-sm-10">
+    <!-- Title -->
+    <div class="title">Computational hardness of estimating quantum entropies via binary entropy bounds</div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      
+      <em>Yupan
+            Liu</em>
+      
+    </div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="periodical">
+      <em><span style="font-style: normal;">To appear in</span> STACS 2026</em>
+    </div>
+    <div class="periodical">
+      
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      
+        <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </div>
+    
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+      
+    
+
+    
+
+    
+      <!-- Hidden abstract block -->
+      <div class="abstract hidden">
+        <p>We investigate the computational hardness of estimating the quantum \(\alpha\)-Rényi entropy \(\mathrm{S}^\mathtt{R}_{\alpha}(\rho) = \frac{\ln \mathrm{Tr}(\rho^\alpha)}{1-\alpha}\) and the quantum $q$-Tsallis entropy \(\mathrm{S}^\mathtt{T}_q(\rho) = \frac{1-\mathrm{Tr}(\rho^q)}{q-1}\), both converging to the von Neumann entropy as the order approaches \(1\). 
+    The promise problems <font style="font-variant: small-caps">Quantum</font> \(\alpha\)-<font style="font-variant: small-caps">Rényi Entropy Approximation</font> (<font style="font-variant: small-caps">RényiQEA</font>\(_\alpha\)) and <font style="font-variant: small-caps">Quantum</font> \(q\)-<font style="font-variant: small-caps">Tsallis Entropy Approximation</font> (<font style="font-variant: small-caps">TsallisQEA</font>\(_q\)) ask whether \(\mathrm{S}^\mathtt{R}_{\alpha}(\rho)\) or \(\mathrm{S}^\mathtt{T}_q(\rho)\), respectively, is at least \(\tau_\mathtt{Y}\) or at most \(\tau_\mathtt{N}\), where \(\tau_\mathtt{Y} - \tau_\mathtt{N}\) is typically a positive constant. Previous hardness results cover only the von Neumann entropy (order \(1\)) and some cases of the quantum \(q\)-Tsallis entropy, while existing approaches do not readily extend to other orders. <br><br>
+
+    We establish that for all positive real orders, the rank-\(2\) variants <font style="font-variant: small-caps">Rank2RényiQEA</font>\(_\alpha\) and <font style="font-variant: small-caps">Rank2TsallisQEA</font>\(_q\) are 𝖡𝖰𝖯-hard. Combined with prior (rank-dependent) quantum query algorithms in Wang, Guan, Liu, Zhang, and Ying (TIT 2024), Wang, Zhang, and Li (TIT 2024), and Liu and Wang (SODA 2025), our results imply:<br>
+      - For all real order \(\alpha &gt; 0\) and \(0 &lt; q \leq 1\), <font style="font-variant: small-caps">LowRankRényiQEA</font>\(_\alpha\) and <font style="font-variant: small-caps">LowRankTsallisQEA</font>\(_q\) are 𝖡𝖰𝖯-complete, where both are restricted versions of <font style="font-variant: small-caps">RényiQEA</font>\(_\alpha\) and <font style="font-variant: small-caps">TsallisQEA</font>\(_q\) with \(\rho\) of polynomial rank.<br>
+      - For all real order \(q&gt;1\), <font style="font-variant: small-caps">TsallisQEA</font>\(_q\) is 𝖡𝖰𝖯-complete. <br><br>
+    
+    Our hardness results stem from reductions based on new inequalities relating the \(\alpha\)-Rényi or \(q\)-Tsallis binary entropies at different orders, where the reductions differ substantially from previous approaches, and the inequalities are also of independent interest.</p>
+      </div>
+    
+
+    
+
+    
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+  
+    <div class="col col-sm-1 abbr">
+      
+    </div>
+  
+
+  <!-- Entry bib key -->
+  <div id="space-bounded-state-testing" class="col-sm-10">
+    <!-- Title -->
+    <div class="title">Space-bounded quantum state testing via space-efficient quantum singular value transformation</div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      
+      <a href="http://francoislegall.com" rel="external nofollow noopener" target="_blank">François
+              Le Gall</a>, <em>Yupan
+            Liu</em>, and <a href="https://wangqs13.github.io" rel="external nofollow noopener" target="_blank">Qisheng
+              Wang</a>
+      
+    </div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="periodical">
+      <em><span style="font-style: normal;">To appear in</span> computational complexity</em>
+    </div>
+    <div class="periodical">
+      
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      
+        <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
+      
+      
+      
+        <a href="http://arxiv.org/abs/2308.05079" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+          <a href="/assets/pdf/space_bounded_state_testing_slides_short.pdf" class="btn btn-sm z-depth-0" role="button">Slides</a>
+        
+      
+      
+    </div>
+    
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+      
+    
+
+    
+
+    
+      <!-- Hidden abstract block -->
+      <div class="abstract hidden">
+        <p>
+  Driven by exploring the power of quantum computation with a limited number of qubits, we present a novel complete characterization for space-bounded quantum computation, which encompasses settings with one-sided error (unitary 𝖼𝗈𝖱𝖰𝖫) and two-sided error (𝖡𝖰𝖫), approached from a quantum state testing perspective: <br>
+
+  - The first family of natural complete problems for unitary 𝖼𝗈𝖱𝖰𝖫, namely <i>space-bounded quantum state certification</i> for trace distance and Hilbert-Schmidt distance;<br>
+  - A new family of (arguably simpler) natural complete problems for 𝖡𝖰𝖫, namely <i>space-bounded quantum state testing</i> for trace distance, Hilbert-Schmidt distance, and quantum entropy difference. <br><br>
+
+  In the space-bounded quantum state testing problem, we consider two logarithmic-qubit quantum circuits (devices) denoted as \(Q_0\) and \(Q_1\), which prepare quantum states \(\rho_0\) and \(\rho_1\), respectively, with access to their ``source code''. Our goal is to decide whether \(\rho_0\) is \(\epsilon_1\)-close to or \(\epsilon_2\)-far from \(\rho_1\) with respect to a specified distance-like measure. Interestingly, unlike time-bounded state testing problems, which exhibit computational hardness depending on the chosen distance-like measure (either 𝖰𝖲𝖹𝖪-complete or 𝖡𝖰𝖯-complete),  our results reveal that the space-bounded state testing problems, considering all three measures, are computationally as easy as preparing quantum states. <br><br>
+  
+  Our results primarily build upon a <i>space-efficient</i> variant of the quantum singular value transformation (QSVT) introduced by Gilyén, Su, Low, and Wiebe (STOC 2019), which is of independent interest. Our technique provides a unified approach for designing space-bounded quantum algorithms. Specifically, we show that implementing QSVT for any bounded polynomial that approximates a piecewise-smooth function incurs only a constant overhead in terms of the space required for special forms of the projected unitary encoding.</p>
+      </div>
+    
+
+    
+
+    
+  </div>
+</div>
+</li>
+</ol>
 <h2 class="bibliography">2025</h2>
-<ol class="bibliography"><li>
+<ol class="bibliography">
+<li>
 <div class="row">
   
     <div class="col col-sm-1 abbr">
@@ -373,9 +598,7 @@
     
   </div>
 </div>
-</li></ol>
-<h2 class="bibliography">2024</h2>
-<ol class="bibliography">
+</li>
 <li>
 <div class="row">
   
@@ -470,7 +693,7 @@
         <p>We introduce two models of space-bounded quantum interactive proof systems, 𝖰𝖨𝖯𝖫 and 𝖰𝖨𝖯<sub>𝖴</sub>𝖫. The 𝖰𝖨𝖯<sub>𝖴</sub>𝖫 model, a space-bounded variant of quantum interactive proofs 𝖰𝖨𝖯 introduced by Watrous (CC 2003) and Kitaev and Watrous (STOC 2000), restricts verifier actions to unitary circuits. In contrast, 𝖰𝖨𝖯𝖫 allows logarithmically many pinching intermediate measurements per verifier action, making it the weakest model that encompasses the classical model of Condon and Ladner (JCSS 1995). <br><br>
 
   We characterize the computational power of 𝖰𝖨𝖯𝖫 and 𝖰𝖨𝖯<sub>𝖴</sub>𝖫. When the message number \(m\) is polynomially bounded, 𝖰𝖨𝖯<sub>𝖴</sub>𝖫⊊𝖰𝖨𝖯𝖫 unless 𝖯=𝖭𝖯: <br>
-  - 𝖰𝖨𝖯𝖫 contains 𝖭𝖯 and is contained in 𝖲𝖡𝖯, which is a subclass of 𝖠𝖬. <br>
+  - 𝖰𝖨𝖯𝖫<sup>𝙷𝙲</sup>, a subclass of 𝖰𝖨𝖯𝖫 defined by a high-concentration condition on <i>yes</i> instances, exactly characterizes 𝖭𝖯. <br>
   - 𝖰𝖨𝖯<sub>𝖴</sub>𝖫 is contained in 𝖯 and contains 𝖲𝖠𝖢<sup>𝟣</sup>∪𝖡𝖰𝖫, where 𝖲𝖠𝖢<sup>𝟣</sup> denotes problems solvable by classical logarithmic-depth, semi-unbounded fan-in circuits. <br>
   
   However, this distinction vanishes when \(m\) is constant. Our results further indicate that (pinching) intermediate measurements uniquely impact space-bounded quantum interactive proofs, unlike in space-bounded quantum computation, where 𝖡𝖰𝖫=𝖡𝖰<sub>𝖴</sub>𝖫. <br><br>
@@ -589,112 +812,6 @@
   </div>
 </div>
 </li>
-</ol>
-<h2 class="bibliography">2023</h2>
-<ol class="bibliography">
-<li>
-<div class="row">
-  
-    <div class="col col-sm-1 abbr">
-      
-    </div>
-  
-
-  <!-- Entry bib key -->
-  <div id="space-bounded-state-testing" class="col-sm-10">
-    <!-- Title -->
-    <div class="title">Space-bounded quantum state testing via space-efficient quantum singular value transformation</div>
-    <!-- Author -->
-    <div class="author">
-      
-
-      
-      <a href="http://francoislegall.com" rel="external nofollow noopener" target="_blank">François
-              Le Gall</a>, <em>Yupan
-            Liu</em>, and <a href="https://wangqs13.github.io" rel="external nofollow noopener" target="_blank">Qisheng
-              Wang</a>
-      
-    </div>
-
-    <!-- Journal/Book title and date -->
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <div class="periodical">
-      <em><span style="font-style: normal;">To appear in</span> computational complexity</em>
-    </div>
-    <div class="periodical">
-      
-    </div>
-
-    <!-- Links/Buttons -->
-    <div class="links">
-      
-        <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
-      
-      
-      
-        <a href="http://arxiv.org/abs/2308.05079" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-        
-          <a href="/assets/pdf/space_bounded_state_testing_slides_short.pdf" class="btn btn-sm z-depth-0" role="button">Slides</a>
-        
-      
-      
-    </div>
-    
-      
-      
-
-      
-      
-
-      
-      
-
-      
-      
-      
-    
-
-    
-
-    
-      <!-- Hidden abstract block -->
-      <div class="abstract hidden">
-        <p>Driven by exploring the power of quantum computation with a limited number of qubits, we present a novel complete characterization for space-bounded quantum computation, which encompasses settings with one-sided error (unitary 𝖼𝗈𝖱𝖰𝖫) and two-sided error (𝖡𝖰𝖫), approached from a quantum state testing perspective: <br>
-
-  - The first family of natural complete problems for unitary 𝖼𝗈𝖱𝖰𝖫, i.e., space-bounded quantum state certification for trace distance and Hilbert-Schmidt distance;<br>
-  - A new family of natural complete problems for 𝖡𝖰𝖫, i.e., space-bounded quantum state testing for trace distance, Hilbert-Schmidt distance, and quantum entropy difference. <br><br>
-
-  In the space-bounded quantum state testing problem, we consider two logarithmic-qubit quantum circuits (devices) denoted as \(Q_0\) and \(Q_1\), which prepare quantum states \(\rho_0\) and \(\rho_1\), respectively, with access to their ``source code''. Our goal is to decide whether \(\rho_0\) is \(\epsilon_1\)-close to or \(\epsilon_2\)-far from \(\rho_1\) with respect to a specified distance-like measure. Interestingly, unlike time-bounded state testing problems, our results reveal that the space-bounded state testing problems all correspond to the same class. Moreover, our algorithms on the trace distance inspire an algorithmic Holevo-Helstrom measurement, implying 𝖰𝖲𝖹𝖪 is in 𝖰𝖨𝖯(𝟤) with a quantum linear-space honest prover.
-
-  Our results primarily build upon a space-efficient variant of the quantum singular value transformation (QSVT) introduced by Gilyén, Su, Low, and Wiebe (STOC 2019), which is of independent interest. Our technique provides a unified approach for designing space-bounded quantum algorithms. Specifically, we show that implementing QSVT for any bounded polynomial that approximates a piecewise-smooth function incurs only a constant overhead in terms of the space required for special forms of the projected unitary encoding.</p>
-      </div>
-    
-
-    
-
-    
-  </div>
-</div>
-</li>
 <li>
 <div class="row">
   
@@ -781,7 +898,7 @@
     
       <!-- Hidden abstract block -->
       <div class="abstract hidden">
-        <p>The complexity class Quantum Statistical Zero-Knowledge (𝖰𝖲𝖹𝖪) captures computational difficulties of the time-bounded quantum state testing problem with respect to the trace distance, known as the Quantum State Distinguishability Problem (𝚀𝚂𝙳𝙿) introduced by Watrous (FOCS 2002). However, 𝚀𝚂𝙳𝙿 is in 𝖰𝖲𝖹𝖪 merely within the polarizing regime, similar to its classical counterpart shown by Sahai and Vadhan (JACM, 2003) due to the polarization lemma (error reduction for 𝚂𝙳𝙿). 
+        <p>The complexity class Quantum Statistical Zero-Knowledge (𝖰𝖲𝖹𝖪) captures computational difficulties of the time-bounded quantum state testing problem with respect to the trace distance, known as the Quantum State Distinguishability Problem (𝚀𝚂𝙳𝙿) introduced by Watrous (FOCS 2002). However, 𝚀𝚂𝙳𝙿 is in 𝖰𝖲𝖹𝖪 merely within the polarizing regime, similar to its classical counterpart shown by Sahai and Vadhan (JACM, 2003) due to the polarization lemma (error reduction for 𝚂𝙳𝙿). <br><br>
 
   Recently, Berman, Degwekar, Rothblum, and Vasudevan (TCC 2019) extended the 𝖲𝖹𝖪 containment for 𝚂𝙳𝙿 beyond the polarizing regime via the time-bounded distribution testing problems with respect to the triangular discrimination and the Jensen-Shannon divergence. This paper introduces proper quantum analogs for these problems by defining quantum counterparts for triangular discrimination. We investigate whether the quantum analogs behave similarly to their classical counterparts and examine the limitations of existing approaches to polarization regarding quantum distances. These new 𝖰𝖲𝖹𝖪-complete problems improve 𝖰𝖲𝖹𝖪 containments for 𝚀𝚂𝙳𝙿 beyond the polarizing regime and establish a simple 𝖰𝖲𝖹𝖪-hardness for the quantum entropy difference problem (𝚀𝙴𝙳𝙿) defined by Ben-Aroya, Schwartz, and Ta-Shma (ToC 2010). Furthermore, we prove that 𝚀𝚂𝙳𝙿 with some exponentially small errors is in 𝖯𝖯, while the same problem without error is in 𝖭𝖰𝖯.</p>
       </div>
@@ -810,8 +927,8 @@
       
 
       
-      Hugo
-            Delavenne, <a href="http://francoislegall.com" rel="external nofollow noopener" target="_blank">François
+      <a href="https://www.lix.polytechnique.fr/~delavenne/" rel="external nofollow noopener" target="_blank">Hugo
+              Delavenne</a>, <a href="http://francoislegall.com" rel="external nofollow noopener" target="_blank">François
               Le Gall</a>, <em>Yupan
             Liu</em>, and <a href="https://sites.google.com/view/masayuki-miyamoto/" rel="external nofollow noopener" target="_blank">Masayuki
               Miyamoto</a>
@@ -892,8 +1009,102 @@
   </div>
 </div>
 </li>
+<li>
+<div class="row">
+  
+    <div class="col col-sm-1 abbr">
+      
+    </div>
+  
+
+  <!-- Entry bib key -->
+  <div id="StoqMA-negl" class="col-sm-10">
+    <!-- Title -->
+    <div class="title">\(\mathsf{StoqMA}\) vs. \(\mathsf{MA}\): the power of error reduction</div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      
+      <a href="https://www.qedma.com/" rel="external nofollow noopener" target="_blank">Dorit
+              Aharonov</a>, <a href="https://abgrilo.github.io" rel="external nofollow noopener" target="_blank">Alex B.
+              Grilo</a>, and <em>Yupan
+            Liu</em>
+      
+    </div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="periodical">
+      <em>Quantum (2025)</em>
+    </div>
+    <div class="periodical">
+      
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      
+        <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
+      
+      
+        <a href="https://doi.org/10.22331/q-2025-09-11-1853" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">DOI</a>
+      
+      
+        <a href="http://arxiv.org/abs/2010.02835" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </div>
+    
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+      
+    
+
+    
+
+    
+      <!-- Hidden abstract block -->
+      <div class="abstract hidden">
+        <p>𝖲𝗍𝗈𝗊𝖬𝖠 characterizes the computational hardness of stoquastic local Hamiltonians, which is a family of Hamiltonians that does not suffer from the sign problem. Although error reduction is commonplace for many complexity classes, such as 𝖡𝖯𝖯, 𝖡𝖰𝖯, 𝖬𝖠, 𝖰𝖬𝖠, etc., this property remains open for 𝖲𝗍𝗈𝗊𝖬𝖠 since Bravyi, Bessen and Terhal defined this class in 2006. In this note, we show that error reduction for 𝖲𝗍𝗈𝗊𝖬𝖠 will imply that 𝖲𝗍𝗈𝗊𝖬𝖠=𝖬𝖠.</p>
+      </div>
+    
+
+    
+
+    
+  </div>
+</div>
+</li>
 </ol>
-<h2 class="bibliography">2020</h2>
+<h2 class="bibliography">2021</h2>
 <ol class="bibliography">
 <li>
 <div class="row">
@@ -1002,102 +1213,6 @@
   
 
   <!-- Entry bib key -->
-  <div id="StoqMA-negl" class="col-sm-10">
-    <!-- Title -->
-    <div class="title">\(\mathsf{StoqMA}\) vs. \(\mathsf{MA}\): the power of error reduction</div>
-    <!-- Author -->
-    <div class="author">
-      
-
-      
-      <a href="https://www.qedma.com/" rel="external nofollow noopener" target="_blank">Dorit
-              Aharonov</a>, <a href="https://abgrilo.github.io" rel="external nofollow noopener" target="_blank">Alex B.
-              Grilo</a>, and <em>Yupan
-            Liu</em>
-      
-    </div>
-
-    <!-- Journal/Book title and date -->
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <div class="periodical">
-      <em>Quantum (2025)</em>
-    </div>
-    <div class="periodical">
-      
-    </div>
-
-    <!-- Links/Buttons -->
-    <div class="links">
-      
-        <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
-      
-      
-        <a href="https://doi.org/10.22331/q-2025-09-11-1853" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">DOI</a>
-      
-      
-        <a href="http://arxiv.org/abs/2010.02835" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-    </div>
-    
-      
-      
-
-      
-      
-
-      
-      
-
-      
-      
-      
-    
-
-    
-
-    
-      <!-- Hidden abstract block -->
-      <div class="abstract hidden">
-        <p>𝖲𝗍𝗈𝗊𝖬𝖠 characterizes the computational hardness of stoquastic local Hamiltonians, which is a family of Hamiltonians that does not suffer from the sign problem. Although error reduction is commonplace for many complexity classes, such as 𝖡𝖯𝖯, 𝖡𝖰𝖯, 𝖬𝖠, 𝖰𝖬𝖠, etc., this property remains open for 𝖲𝗍𝗈𝗊𝖬𝖠 since Bravyi, Bessen and Terhal defined this class in 2006. In this note, we show that error reduction for 𝖲𝗍𝗈𝗊𝖬𝖠 will imply that 𝖲𝗍𝗈𝗊𝖬𝖠=𝖬𝖠.</p>
-      </div>
-    
-
-    
-
-    
-  </div>
-</div>
-</li>
-</ol>
-<h2 class="bibliography">2019</h2>
-<ol class="bibliography"><li>
-<div class="row">
-  
-    <div class="col col-sm-1 abbr">
-      
-    </div>
-  
-
-  <!-- Entry bib key -->
   <div id="PreciseQCMA-in-IP" class="col-sm-10">
     <!-- Title -->
     <div class="title">Towards a quantum-inspired proof for \({\sf IP} = {\sf PSPACE}\)</div>
@@ -1182,7 +1297,8 @@
     
   </div>
 </div>
-</li></ol>
+</li>
+</ol>
 
 </div>
 
@@ -1210,7 +1326,7 @@
 
   
   
-    Last updated: October 17, 2025.
+    Last updated: December 12, 2025.
   
 
     </div>
