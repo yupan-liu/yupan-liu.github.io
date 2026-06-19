@@ -32,7 +32,7 @@ ninja.data = [{
               },
             },{id: "nav-talks",
           title: "Talks",
-          description: "Slides attached here only reflect the speaker&#39;s thoughts at the moment of giving the talks and probably consist of errors. Therefore, please be careful when referring to statements from these slides.",
+          description: "The slides attached here reflect only the speaker&#39;s thoughts at the time of the talks and may contain errors. Therefore, please be careful when referring to statements from these slides.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/talks/";
