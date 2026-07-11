@@ -300,7 +300,7 @@
   <!-- Entry bib key -->
   <div id="StoqMAtwo" class="col-sm-10">
     <!-- Title -->
-    <div class="title">Unentangled stoquastic Merlin--Arthur proof systems: the power of unentanglement without destructive interference</div>
+    <div class="title">The power of unentanglement without destructive interference</div>
     <!-- Author -->
     <div class="author">
       
@@ -375,14 +375,17 @@
     
       <!-- Hidden abstract block -->
       <div class="abstract hidden">
-        <p>Stoquasticity, originating in physical systems free of the so-called <i>sign problem</i> and avoiding destructive interference from sign cancellations, gives rise to 𝖲𝗍𝗈𝗊𝖬𝖠 introduced by Bravyi, Bessen, and Terhal (2006), a quantum-inspired intermediate class between 𝖬𝖠 and 𝖠𝖬. Unentanglement similarly gives rise to 𝖰𝖬𝖠(𝟤), introduced by Kobayashi, Matsumoto, and Yamakami (CJTCS 2009), which generalizes 𝖰𝖬𝖠 to two unentangled proofs and still has only the trivial 𝖭𝖤𝖷𝖯 upper bound. <br><br>
+        <p>Stoquasticity, originating in physical systems free of the so-called <i>sign problem</i> and avoiding destructive interference from sign cancellations, gives rise to 𝖲𝗍𝗈𝗊𝖬𝖠, introduced by Bravyi, Bessen, and Terhal (2006), a quantum-inspired intermediate class between 𝖬𝖠 and 𝖠𝖬. Unentanglement similarly gives rise to 𝖰𝖬𝖠(𝟤), introduced by Kobayashi, Matsumoto, and Yamakami (CJTCS 2009), which generalizes 𝖰𝖬𝖠 to two unentangled proofs and still has only the trivial 𝖭𝖤𝖷𝖯 upper bound. <br><br>
+    
+    In this work, we initiate a systematic study of the power of unentanglement without destructive interference via 𝖲𝗍𝗈𝗊𝖬𝖠(𝟤), the class of unentangled stoquastic Merlin--Arthur proof systems. Beyond its complexity-theoretic interest, 𝖲𝗍𝗈𝗊𝖬𝖠(𝟤) is closely connected to the optimality of non-negative tensor optimization algorithms. We highlight:<br><br>
+    
+        1. 𝖭𝖯 $\subseteq$ 𝖲𝗍𝗈𝗊𝖬𝖠(𝟤) with $\widetilde{O}(\sqrt{n})$-qubit proofs and completeness error $2^{-{\rm polylog}(n)}$, paralleling the best known 𝖰𝖬𝖠(𝟤) lower bounds except for perfect completeness. Meanwhile, the Sum-of-Squares algorithm of Barak, Kelner, and Steurer (STOC 2014) gives an exponential-time upper bound for 𝖲𝗍𝗈𝗊𝖬𝖠(𝟤). Our tightened analysis shows the essential <i>optimality</i> of the parameters in both our protocol and the BKS algorithm under the Exponential-Time Hypothesis (ETH). <br><br>
 
-    In this work, we initiate a systematic study of the power of unentanglement without destructive interference via 𝖲𝗍𝗈𝗊𝖬𝖠(𝟤), the class of unentangled stoquastic Merlin--Arthur proof systems. Although 𝖲𝗍𝗈𝗊𝖬𝖠 is semi-quantum and may collapse to 𝖬𝖠, 𝖲𝗍𝗈𝗊𝖬𝖠(𝟤) turns out to be surprisingly powerful. We establish the following results: <br>
-      - 𝖭𝖯 $\subseteq$ 𝖲𝗍𝗈𝗊𝖬𝖠(𝟤) with $\widetilde{O}(\sqrt{n})$-qubit proofs and completeness error $2^{-{\rm polylog}(n)}$, paralleling the best known 𝖰𝖬𝖠(𝟤) lower bounds except for perfect completeness. 
-        On the upper-bound side, 𝖲𝗍𝗈𝗊𝖬𝖠(𝟤) $\subseteq$ 𝖤𝖷𝖯 via the Sum-of-Squares algorithm due to Barak, Kelner, and Steurer (STOC 2014). Our tightened SoS upper bound shows the essential <i>optimality</i> of the parameters in both our protocol and the BKS algorithm under the exponential-time hypothesis (ETH). <br>
-      - 𝖲𝗍𝗈𝗊𝖬𝖠(𝟤)<sub>𝟣</sub> $\subseteq$ 𝖯𝖲𝖯𝖠𝖢𝖤, and the containment holds with completeness error $2^{-2^{{\rm poly}(n)}}$. <br>
-      - 𝖯𝗋𝖾𝖼𝗂𝗌𝖾𝖲𝗍𝗈𝗊𝖬𝖠(𝟤), a variant of 𝖲𝗍𝗈𝗊𝖬𝖠(𝟤) with exponentially small promise gap, <i>cannot</i> achieve perfect completeness unless 𝖤𝖷𝖯=𝖭𝖤𝖷𝖯. In contrast, 𝖯𝗋𝖾𝖼𝗂𝗌𝖾𝖲𝗍𝗈𝗊𝖬𝖠 achieves perfect completeness, since 𝖯𝖲𝖯𝖠𝖢𝖤 $\subseteq$ 𝖯𝗋𝖾𝖼𝗂𝗌𝖾𝖲𝗍𝗈𝗊𝖬𝖠<sub>𝟣</sub>. <br>
-      - When the completeness error is negligible, 𝖲𝗍𝗈𝗊𝖬𝖠($k$)=𝖲𝗍𝗈𝗊𝖬𝖠(𝟤) for $k\geq 2$. <br><br>
+        2. Under nearly perfect completeness, 𝖲𝗍𝗈𝗊𝖬𝖠(𝟤) admits sharper deterministic upper bounds: for 𝖲𝗍𝗈𝗊𝖬𝖠(𝟤)<sub>𝟣</sub>, the parameter dependence in the general ETH-optimal time bound can be <i>exponentially</i> improved, or the bound achieved <i>simultaneously</i> with polynomial space. <br><br>
+
+        3. For logarithmic-size proofs, 𝖭𝖯 $\subseteq$ 𝖲𝗍𝗈𝗊𝖬𝖠(𝟤)<sub>𝗅𝗈𝗀</sub> with completeness error $O(n^{-2})$ and implicitly vanishing gap. Meanwhile, 𝖲𝗍𝗈𝗊𝖬𝖠(𝟤)<sub>𝗅𝗈𝗀</sub> $\subseteq$ 𝖬𝖠, and consequently quantum-inspired randomness enables <i>exponentially</i> shorter unentangled proofs even under the standard derandomization assumption 𝖬𝖠=𝖭𝖯. <br><br>
+
+        4. 𝖯𝗋𝖾𝖼𝗂𝗌𝖾𝖲𝗍𝗈𝗊𝖬𝖠(𝟤), a variant of 𝖲𝗍𝗈𝗊𝖬𝖠(𝟤) with exponentially small promise gap, <i>cannot</i> achieve perfect completeness unless 𝖤𝖷𝖯=𝖭𝖤𝖷𝖯. In contrast, 𝖯𝗋𝖾𝖼𝗂𝗌𝖾𝖲𝗍𝗈𝗊𝖬𝖠 achieves perfect completeness, since 𝖯𝖲𝖯𝖠𝖢𝖤 $\subseteq$ 𝖯𝗋𝖾𝖼𝗂𝗌𝖾𝖲𝗍𝗈𝗊𝖬𝖠<sub>𝟣</sub>. <br><br>
 
     Our lower bounds are obtained by stoquastizing the short-proof 𝖰𝖬𝖠(𝟤) protocols via <i>distribution testing</i> techniques. Our upper bounds for the nearly perfect completeness case are proved via our <i>rectangular closure testing</i> framework, a new combinatorial technique tailored to 𝖲𝗍𝗈𝗊𝖬𝖠(𝟤)<sub>𝟣</sub>.</p>
       </div>
@@ -1891,7 +1894,7 @@
 
   
   
-    Last updated: July 07, 2026.
+    Last updated: July 11, 2026.
   
 
     </div>
